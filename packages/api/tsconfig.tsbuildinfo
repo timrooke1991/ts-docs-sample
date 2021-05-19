@@ -461,9 +461,14 @@
         "signature": "3b05c396564e51753e921e1cc4aae1cf7cd9be53c891cf2e81fa29f11c0bd373",
         "affectsGlobalScope": false
       },
+      "./src/functions/handler.ts": {
+        "version": "cfd282350c54663e38d15398e3ef2fd9d7d9a19c28d5505213fb15cc92c29d17",
+        "signature": "7099b471ce8fedd2fc8d7e00a1d523eaa3bdf83236932d83bdd9354574769674",
+        "affectsGlobalScope": false
+      },
       "./src/index.ts": {
-        "version": "a5ee9625ca78936a0fa53f0c9fd2306c5b71b73bf558a1dc60f0ab0e580452ff",
-        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "version": "37e439006c09c60ffaa1e20972e558dff7574263410a6bb9dad3886b6cdb180c",
+        "signature": "663bdb27ad95cb032aca24abfa57d58def187143f14f10b0fde625f24018ea54",
         "affectsGlobalScope": false
       }
     },
@@ -706,7 +711,8 @@
         "../../node_modules/@types/node/index.d.ts"
       ],
       "./src/index.ts": [
-        "../../node_modules/@types/express/index.d.ts"
+        "../../node_modules/@types/express/index.d.ts",
+        "./src/functions/handler.ts"
       ]
     },
     "exportedModulesMap": {
@@ -1025,6 +1031,7 @@
       "../../node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "../../node_modules/typescript/lib/lib.scripthost.d.ts",
       "../../node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
+      "./src/functions/handler.ts",
       "./src/index.ts"
     ]
   },

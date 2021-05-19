@@ -1,0 +1,22 @@
+0 silly argv {
+0 silly argv   _: [ 'run' ],
+0 silly argv   lernaVersion: '4.0.0',
+0 silly argv   '$0': '/Users/timaxis.ws/Desktop/learning/monorepo/tsdoc-api/node_modules/.bin/lerna',
+0 silly argv   script: 'api-report'
+0 silly argv }
+1 notice cli v4.0.0
+2 verbose rootPath /Users/timaxis.ws/Desktop/learning/monorepo/tsdoc-api
+3 info versioning independent
+4 error JSONError: Unexpected token "/" (0x2F) in JSON at position 100 while parsing near "...dist/index.d.ts\",\n  // \"typings\": \"dist/..." in packages/api/package.json
+4 error
+4 error [0m [90m 4 |[39m   [32m"main"[39m[33m:[39m [32m"dist/index.js"[39m[33m,[39m[0m
+4 error [0m [90m 5 |[39m   [32m"types"[39m[33m:[39m [32m"dist/index.d.ts"[39m[33m,[39m[0m
+4 error [0m[31m[1m>[22m[39m[90m 6 |[39m   [90m// "typings": "dist/index.d.ts",[39m[0m
+4 error [0m [90m   |[39m   [31m[1m^[22m[39m[0m
+4 error [0m [90m 7 |[39m   [32m"license"[39m[33m:[39m [32m"MIT"[39m[33m,[39m[0m
+4 error [0m [90m 8 |[39m   [32m"scripts"[39m[33m:[39m {[0m
+4 error [0m [90m 9 |[39m     [32m"start"[39m[33m:[39m [32m"ts-node-dev ./src/index"[39m[33m,[39m[0m
+4 error
+4 error     at parseJson (/Users/timaxis.ws/Desktop/learning/monorepo/tsdoc-api/node_modules/parse-json/index.js:29:21)
+4 error     at parse (/Users/timaxis.ws/Desktop/learning/monorepo/tsdoc-api/node_modules/load-json-file/index.js:15:9)
+4 error     at module.exports (/Users/timaxis.ws/Desktop/learning/monorepo/tsdoc-api/node_modules/load-json-file/index.js:18:47)

@@ -1,0 +1,22 @@
+{
+  "name": "tsdoc-example-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "yarn tsc -b packages",
+    "clean": "lerna exec 'yarn clean'",
+    "build-packages": "lerna exec 'yarn build'"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@microsoft/api-documenter": "^7.9.12",
+    "@microsoft/api-extractor": "^7.10.4",
+    "eslint": "^7.11.0",
+    "lerna": "^4.0.0",
+    "rimraf": "^3.0.2"
+  }
+}
