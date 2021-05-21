@@ -10,13 +10,13 @@
  * on <a href="https://frontendmasters.com" target="_blank">FrontEnd Masters</a>
  *
  * @remarks
- * All interfaces are prefixed with `I`
+ * All interfaces are prefixed with
  *
  * @packageDocumentation
  */
 
 import express, { Application, Request, Response } from "express";
-import { getRandomFruit } from './functions/handler';
+import { getRandomFruit } from "./getRandomFruit";
 
 const app: Application = express();
 const port = 3000;
@@ -25,29 +25,22 @@ const port = 3000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-/**
- * Returns the average of two numbers.
- *
- * @remarks
- * This route /get route
- * @param {import('express').Request} req
- * @param {import('express').Response} _res
- * @param {import('express').NextFunction} next
- *
- * @returns fruit
- */
 async function index(_req: Request, res: Response): Promise<Response> {
   return res.status(200).send(getRandomFruit());
 }
 
 app.get(
   "/", index
-);
+  );
 
-try {
-  app.listen(port, (): void => {
-    console.log(`Connected successfully on port ${port}`);
-  });
-} catch (error) {
-  console.error(`Error occured: ${error.message}`);
-}
+  try {
+    app.listen(port, (): void => {
+      console.log(`Connected successfully on port ${port}`);
+    });
+  } catch (error) {
+    console.error(`Error occured: ${error.message}`);
+  }
+
+export { getRandomFruit } from "./getRandomFruit";
+export * from "./interfaces";
+export default app;

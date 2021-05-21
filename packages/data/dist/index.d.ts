@@ -10,8 +10,12 @@
  * on <a href="https://frontendmasters.com" target="_blank">FrontEnd Masters</a>
  *
  * @remarks
- * All interfaces are prefixed with `I`
+ * All interfaces are prefixed with
  *
  * @packageDocumentation
  */
-export {};
+import { Application } from "express";
+declare const app: Application;
+export { getRandomFruit } from "./getRandomFruit";
+export * from "./interfaces";
+export default app;

@@ -161,6 +161,16 @@
         "signature": "32b8443be144970b813b9dd72dcdba2059fbdfdae4d3a50c4d8a158ed6057bbe",
         "affectsGlobalScope": false
       },
+      "./src/interfaces.ts": {
+        "version": "173ec8de3ca0c415ae723cedcbbca499346ce55036069355917e9f6910f5b3f0",
+        "signature": "029cbb7ec557c22e046b0a048a9197d8fc1d61ccc1ba60b11783427ce994117a",
+        "affectsGlobalScope": false
+      },
+      "./src/getrandomfruit.ts": {
+        "version": "eb5a0ff12f6d011a0e17fc0bb6721435588238d6ee5c1d81b273b1a7c8043852",
+        "signature": "37369a6eb91dd8e76f03b8cdfe8ebca6d981d14ab1b39a069284690652e5df94",
+        "affectsGlobalScope": false
+      },
       "../../node_modules/@types/node/assert/strict.d.ts": {
         "version": "c7bdc99177a2a94d25fb13722adaaf5b3291bf70b4d1b27584ba189dd3889ba3",
         "signature": "c7bdc99177a2a94d25fb13722adaaf5b3291bf70b4d1b27584ba189dd3889ba3",
@@ -461,14 +471,9 @@
         "signature": "3b05c396564e51753e921e1cc4aae1cf7cd9be53c891cf2e81fa29f11c0bd373",
         "affectsGlobalScope": false
       },
-      "./src/functions/handler.ts": {
-        "version": "cfd282350c54663e38d15398e3ef2fd9d7d9a19c28d5505213fb15cc92c29d17",
-        "signature": "7099b471ce8fedd2fc8d7e00a1d523eaa3bdf83236932d83bdd9354574769674",
-        "affectsGlobalScope": false
-      },
       "./src/index.ts": {
-        "version": "37e439006c09c60ffaa1e20972e558dff7574263410a6bb9dad3886b6cdb180c",
-        "signature": "663bdb27ad95cb032aca24abfa57d58def187143f14f10b0fde625f24018ea54",
+        "version": "837de39118215a8db074f014c9e57e3a28c9190b2ad8ddcc0971a4b33638256a",
+        "signature": "38821d177df220db525f51e1953bfb4fc09cd2e0843fce1edbe5866a9bc110f7",
         "affectsGlobalScope": false
       }
     },
@@ -710,9 +715,13 @@
         "../../node_modules/@types/node/http.d.ts",
         "../../node_modules/@types/node/index.d.ts"
       ],
+      "./src/getrandomfruit.ts": [
+        "./src/interfaces.ts"
+      ],
       "./src/index.ts": [
         "../../node_modules/@types/express/index.d.ts",
-        "./src/functions/handler.ts"
+        "./src/getrandomfruit.ts",
+        "./src/interfaces.ts"
       ]
     },
     "exportedModulesMap": {
@@ -936,6 +945,14 @@
         "../../node_modules/@types/mime/index.d.ts",
         "../../node_modules/@types/node/http.d.ts",
         "../../node_modules/@types/node/index.d.ts"
+      ],
+      "./src/getrandomfruit.ts": [
+        "./src/interfaces.ts"
+      ],
+      "./src/index.ts": [
+        "../../node_modules/@types/express/index.d.ts",
+        "./src/getrandomfruit.ts",
+        "./src/interfaces.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -1031,8 +1048,9 @@
       "../../node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "../../node_modules/typescript/lib/lib.scripthost.d.ts",
       "../../node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
-      "./src/functions/handler.ts",
-      "./src/index.ts"
+      "./src/getrandomfruit.ts",
+      "./src/index.ts",
+      "./src/interfaces.ts"
     ]
   },
   "version": "4.2.4"

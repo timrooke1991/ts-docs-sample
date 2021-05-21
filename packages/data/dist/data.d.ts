@@ -10,10 +10,33 @@
  * on <a href="https://frontendmasters.com" target="_blank">FrontEnd Masters</a>
  *
  * @remarks
- * All interfaces are prefixed with `I`
+ * All interfaces are prefixed with
  *
  * @packageDocumentation
  */
 
+import { Application } from 'express';
+
+declare const app: Application;
+export default app;
+
+/**
+ * Returns fruit of type {@link #IFruit}
+ *
+ * @remarks
+ * This returns a random fruit
+ *
+ * @returns fruit
+ */
+export declare function getRandomFruit(): IFruit;
+
+/**
+ * A fruit
+ * @public
+ */
+export declare interface IFruit {
+    id: number;
+    type: string;
+}
 
 export { }

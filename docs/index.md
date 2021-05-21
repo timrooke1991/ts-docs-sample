@@ -8,5 +8,6 @@
 
 |  Package | Description |
 |  --- | --- |
+|  [@shlack/data](./data.md) | <h3>Why does this API exist?</h3><code>@shlack/types</code> is a api for managing fruit types and type guards for our demo slack app. This is part of Mike's<!-- -->If you want to watch a recorded video of this course, look for it on <a href="https://frontendmasters.com" target="_blank">FrontEnd Masters</a> |
 |  [api](./api.md) | <h3>Why does this API exist?</h3><code>@shlack/types</code> is a api for managing fruit types and type guards for our demo slack app. This is part of Mike's<!-- -->If you want to watch a recorded video of this course, look for it on <a href="https://frontendmasters.com" target="_blank">FrontEnd Masters</a> |
 

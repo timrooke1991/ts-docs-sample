@@ -11,34 +11,34 @@
  * on <a href="https://frontendmasters.com" target="_blank">FrontEnd Masters</a>
  *
  * @remarks
- * All interfaces are prefixed with `I`
+ * All interfaces are prefixed with
  *
  * @packageDocumentation
  */
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.getRandomFruit = void 0;
 const express_1 = __importDefault(require("express"));
-const handler_1 = require("./functions/handler");
+const getRandomFruit_1 = require("./getRandomFruit");
 const app = express_1.default();
 const port = 3000;
 // Body parsing Middleware
 app.use(express_1.default.json());
 app.use(express_1.default.urlencoded({ extended: true }));
-/**
- * Returns the average of two numbers.
- *
- * @remarks
- * This route /get route
- * @param {import('express').Request} req
- * @param {import('express').Response} _res
- * @param {import('express').NextFunction} next
- *
- * @returns fruit
- */
 async function index(_req, res) {
-    return res.status(200).send(handler_1.getRandomFruit());
+    return res.status(200).send(getRandomFruit_1.getRandomFruit());
 }
 app.get("/", index);
 try {
@@ -49,4 +49,8 @@ try {
 catch (error) {
     console.error(`Error occured: ${error.message}`);
 }
+var getRandomFruit_2 = require("./getRandomFruit");
+Object.defineProperty(exports, "getRandomFruit", { enumerable: true, get: function () { return getRandomFruit_2.getRandomFruit; } });
+__exportStar(require("./interfaces"), exports);
+exports.default = app;
 //# sourceMappingURL=index.js.map
